@@ -2,6 +2,12 @@
 
 Algorithm that recursively produces a depth-indented listing of files.
 
+# Usage
+
+```bash
+python3 main.py path/to/your/tree/root/directory
+```
+
 # Example
 
 ![First shell results example](img/example/example_tree1.png)
