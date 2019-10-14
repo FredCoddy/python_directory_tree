@@ -4,9 +4,9 @@ Algorithm that recursively produces a depth-indented listing of files.
 
 # Example
 
-![](img/example/example_tree1.png)
+![First shell results example](img/example/example_tree1.png)
 
 
 # Requirement
 
--
+- [argparse](https://docs.python.org/3/library/argparse.html): Parser for command-line options, arguments and sub-commands
