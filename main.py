@@ -1,7 +1,12 @@
 #-*- coding: utf-8 -*-
 
+import argparse
 import os
 from os.path import isfile
+
+parser = argparse.ArgumentParser(description='Draw hierarchical tree')
+parser.add_argument("path", help="Absolute path to the root directory")
+
 
 path = os.getcwd() # get the working directory
 spacing = ""
@@ -19,4 +24,5 @@ def draw_tree(path, spacing):
             print(f"{spacing} |_ {elem}")
             draw_tree(f"{path}/{elem}", spacing)
 
-draw_tree("/home/coddy/bin/COPASI-4.15.95-Linux-64bit", "")
+args = parser.parse_args()
+draw_tree(args.path, "")
